@@ -5,7 +5,7 @@ import pickle
 from scipy.special import expit
 
 class LogisticRegressionSGD:
-    def __init__(self, learning_rate=0.01, n_epochs=100, batch_size=1):
+    def __init__(self, learning_rate=0.01, n_epochs=1000, batch_size=1):
         self.learning_rate = learning_rate
         self.n_epochs = n_epochs
         self.batch_size = batch_size
