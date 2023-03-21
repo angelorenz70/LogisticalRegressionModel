@@ -8,7 +8,7 @@ app = Flask(__name__)
 def predict():
     # Get the input data from the request
     data = request.get_json()
-    data = np.array(list(data.values())).astype(float).reshape(1, 7)
+    data = np.array(list(data.values())).astype(float).reshape(1, 8)
 
     with open('HeartDiseaseorAttack.pickle', 'rb') as f:
         model = pickle.load(f)
